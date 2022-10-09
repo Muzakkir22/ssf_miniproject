@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: url('./images/Food.jpg') no-repeat center;
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+.login-wrapper {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	padding-left: 100px;
+	margin-bottom: 200px;
+}
+
+.form {
+	position: relative;
+	width: 100%;
+	max-width: 380px;
+	padding: 80px 40px 40px;
+	background: rgba(0,0,0,0.7);
+	border-radius: 10px;
+	color: snow;
+	box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+
+.form::before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255,255,255, 0.08);
+	border-radius: 10px;
+	pointer-events: none;
+}
+
+.form img {
+	
+}
+
+#forgot-pw {
+	display: none;
+}

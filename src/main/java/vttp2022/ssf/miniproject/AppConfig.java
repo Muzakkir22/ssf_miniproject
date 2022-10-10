@@ -27,8 +27,12 @@ public class AppConfig {
   @Value("${spring.redis.username}")
   private String redisUsername;
 
-  @Value("${REDIS_PASSWORD}")
-    private String redisPassword;
+  // This command is for localhost ONLY *Remember* //
+  // @Value("${REDIS_PASSWORD}")
+  //   private String redisPassword;
+
+    // This command is to link the password to heroku(Secret) //
+    private String redisPassword = System.getenv("REDIS_PASSWORD");
 
   @Bean("redislab")
   public RedisTemplate<String, Object> initRedisTemplate() {

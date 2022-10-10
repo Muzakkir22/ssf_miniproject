@@ -1,5 +1,7 @@
 package vttp2022.ssf.miniproject;
 
+import java.beans.JavaBean;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

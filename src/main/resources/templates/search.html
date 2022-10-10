@@ -40,8 +40,23 @@
             </div>
           </nav>
           <br>
+
+          <form action="save">
+          <table data-th-each="m: ${meal}">
+            <tr>
+                <td data-th-text="${m.idMeal}"></td>
+                <td data-th-text="${m.strMeal}"></td>
+                <td data-th-text="${m.strCategory}"></td>
+                <td data-th-text="${m.strArea}"></td>
+                <img  style ="height:250px" data-th-src="${m.strMealThumb}">
+                <input type="checkbox" name="checkbox" th:value="${m.strMeal}">
+                
+                    
+            </tr>
+        </table>
+        <button>Save to Favourites</button>
     
-        
+      </form>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
             crossorigin="anonymous"></script> 

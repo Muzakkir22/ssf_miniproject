@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
@@ -26,7 +26,7 @@ public class MealService {
     // @Autowired
     // private MealRepository mealRepo;
 
-    private static String mealInput = "chicken";
+    private static String mealInput;
 
     public static List<Meal> getMeal() {
 
@@ -75,29 +75,5 @@ public class MealService {
         return list;
         
     }
-
-    // public List<Meal> searchMeal(String word) {
-
-    //     String url = UriComponentsBuilder.fromUriString(URL);
-    //     .queryParam("s", word)
-    //     .toUriString();
-
-    //     // Create the GET request, GET url
-    //     RequestEntity<Void> req = RequestEntity.get(url).build();
-    //     // calling API
-    //     RestTemplate template = new RestTemplate();
-    //     ResponseEntity<String> resp = template.exchange(req, String.class);
-
-    //     // Get the payload and do something with it
-    //     String payload = resp.getBody();
-    //     System.out.println("payload: " + payload);
-
-    //     // Convert the String payload to JsonObject
-    //     Reader strReader = new StringReader(payload);
-    //     JsonReader jsonReader = Json.createReader(strReader);
-    //     JsonObject mealResult = jsonReader.readObject();
-    //     // get JsonArray "Data"
-    //     JsonArray mealData = mealResult.getJsonArray(payload)
-    // }
 
 }
